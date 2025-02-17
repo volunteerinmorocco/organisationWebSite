@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Thomas V. Stpierre &#8211; Cariera</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='https://code.jquery.com/' />
+
+<link rel="alternate" type="application/rss+xml" title="Cariera &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Cariera &raquo; Comments Feed" href="comments/feed/index.html" />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='preload stylesheet' as='style' onload="this.onload=null;this.rel='stylesheet'" id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css%3Fver=6.7.2.css' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--cardo: Cardo;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='woocommerce-layout-css' href='wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css%3Fver=1739476630.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css%3Fver=1739476630.css' type='text/css' media='only screen and (max-width: 768px)' />
+<link data-minify="1" rel='stylesheet' id='woocommerce-general-css' href='wp-content/cache/background-css/cariera.co/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce.css%3Fver=1739476630&amp;wpr_t=1739715297.css' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link data-minify="1" rel='stylesheet' id='jquery-ui-css' href='wp-content/cache/background-css/cariera.co/wp-content/cache/min/1/ui/1.13.3/themes/smoothness/jquery-ui.min.css%3Fver=1739476630&amp;wpr_t=1739715297.css' type='text/css' media='all' />
+<link rel='stylesheet' id='select2-css' href='wp-content/plugins/wp-job-manager/assets/lib/select2/select2.min.css%3Fver=4.0.10.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='line-awesome-css' href='wp-content/cache/min/1/wp-content/themes/cariera/assets/vendors/font-icons/line-awesome.min.css%3Fver=1739476630.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cariera-style-css' href='wp-content/themes/cariera/style.css%3Fver=1.8.8.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='cariera-frontend-css' href='wp-content/cache/min/1/wp-content/themes/cariera/assets/dist/css/frontend.css%3Fver=1739476630.css' type='text/css' media='all' />
+<style id='cariera-frontend-inline-css' type='text/css'>
+ :root{--cariera-primary:#303af7;--cariera-secondary:#443088;--cariera-body-bg:#fff;--cariera-body-wrapper:#fff;--cariera-body-text:#948a99;--cariera-header-bg:#fff;--cariera-menu-hover:#303af7;--cariera-footer-bg:#1e1f21;--cariera-footer-title:#fff;--cariera-footer-color:#948a99;}header .navbar-brand img{width:150px;margin-top:0px !important;margin-bottom:0px !important;margin-left:0px !important;margin-right:0px !important;}.range-output:after{content:'km';}
+</style>
+<link data-minify="1" rel='stylesheet' id='cariera-wc-general-styles-css' href='wp-content/cache/min/1/wp-content/themes/cariera/assets/dist/css/woocommerce-general.css%3Fver=1739476630.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cariera-child-style-css' href='wp-content/themes/cariera-child/style.css%3Fver=6.7.2.css' type='text/css' media='all' />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-72be9c4f-e1c4-4fe9-ba85-655702611e66) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type="text/javascript" src="wp-includes/js/jquery/jquery.min.js%3Fver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.min.js%3Fver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js%3Fver=2.7.0-wc.9.5.2" id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/cariera.co\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://cariera.co/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.5.2" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js%3Fver=2.1.4-wc.9.5.2" id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://cariera.co/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.5.2" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="wp-content/plugins/wp-job-manager/assets/lib/select2/select2.full.min.js%3Fver=4.0.10" id="select2-js" defer="defer" data-wp-strategy="defer"></script>
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/resumes/3192" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://cariera.co/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.2" />
+<meta name="generator" content="WooCommerce 9.5.2" />
+<link rel="canonical" href="index.html%3Fp=3192.html" />
+<link rel='shortlink' href='index.html%3Fp=3192.html' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fcariera.co%252Fresume%252Fthomas-v-stpierre%252F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fcariera.co%252Fresume%252Fthomas-v-stpierre%252F&amp;format=xml" />
+<style id='job_manager_colors'>
+</style>
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.26.5; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style class='wp-fonts-local' type='text/css'>
+@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:fallback;src:url('wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Cardo;font-style:normal;font-weight:400;font-display:fallback;src:url('wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2') format('woff2');}
+</style>
+<link rel="icon" href="wp-content/uploads/2020/05/favicon.png" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/2020/05/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/2020/05/favicon.png" />
+<meta name="msapplication-TileImage" content="https://cariera.co/wp-content/uploads/2020/05/favicon.png" />
+<style id="kirki-inline-styles">body{font-family:Poppins;font-size:16px;font-weight:400;line-height:1.65;text-transform:none;color:#948a99;}h1{font-family:Poppins;font-size:46px;font-weight:600;line-height:1.3;text-transform:none;color:#333;}h2{font-family:Poppins;font-size:38px;font-weight:600;line-height:1.3;text-transform:none;color:#333;}h3{font-family:Poppins;font-size:30px;font-weight:600;line-height:1.3;text-transform:none;color:#333;}h4{font-family:Poppins;font-size:24px;font-weight:500;line-height:1.3;text-transform:none;color:#333;}h5{font-family:Poppins;font-size:20px;font-weight:500;line-height:1.3;text-transform:none;color:#333;}h6{font-family:Poppins;font-size:18px;font-weight:500;line-height:1.3;text-transform:none;color:#333;}ul.main-nav .menu-item a, header.main-header .extra-menu-item > a{font-family:Poppins;font-size:14px;font-weight:500;line-height:1.4;text-transform:capitalize;color:#666;}ul.main-nav .menu-item.dropdown .dropdown-menu > li > a, ul.main-nav .mega-menu .dropdown-menu .mega-menu-inner .menu-item-mega .sub-menu a{font-family:Poppins;font-size:14px;font-weight:500;line-height:1.4;text-transform:capitalize;color:#666;}/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.woocommerce .blockUI.blockOverlay::before{--wpr-bg-ff49e37b-1b54-4cd9-b89a-72ec1fa632be: url('wp-content/plugins/woocommerce/assets/images/icons/loader.svg');}.woocommerce .loader::before{--wpr-bg-2c001416-9d30-460c-8faa-0ddd2fe1f30a: url('wp-content/plugins/woocommerce/assets/images/icons/loader.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.visa{--wpr-bg-e21a317e-a62c-4fd2-93a6-b62aa5b3da7a: url('wp-content/plugins/woocommerce/assets/images/icons/credit-cards/visa.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.mastercard{--wpr-bg-ba9ab1c8-3f3a-4666-b7d8-b2a6c9e99a34: url('wp-content/plugins/woocommerce/assets/images/icons/credit-cards/mastercard.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.laser{--wpr-bg-798e0190-ada0-436e-939a-98b78c235a3e: url('wp-content/plugins/woocommerce/assets/images/icons/credit-cards/laser.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.dinersclub{--wpr-bg-9880294d-e815-419a-8745-7ebffd3eb99c: url('wp-content/plugins/woocommerce/assets/images/icons/credit-cards/diners.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.maestro{--wpr-bg-db19326e-460e-4951-b7f3-69e9194714fd: url('wp-content/plugins/woocommerce/assets/images/icons/credit-cards/maestro.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.jcb{--wpr-bg-f5fa527e-1ef5-4ba2-b1b4-5abd95f36231: url('wp-content/plugins/woocommerce/assets/images/icons/credit-cards/jcb.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.amex{--wpr-bg-dfb9da7c-e4b7-4721-a9fa-39596ac0fa27: url('wp-content/plugins/woocommerce/assets/images/icons/credit-cards/amex.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.discover{--wpr-bg-7ef151fa-feba-4948-9897-ce3dab987a60: url('wp-content/plugins/woocommerce/assets/images/icons/credit-cards/discover.svg');}.ui-widget-header{--wpr-bg-13c72f0e-9a8f-469f-b892-3ae0b0695553: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png');}.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,.ui-button,html .ui-button.ui-state-disabled:hover,html .ui-button.ui-state-disabled:active{--wpr-bg-e6d71e6e-d39e-40bf-872f-78911e01dddd: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png');}.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus,.ui-button:hover,.ui-button:focus{--wpr-bg-f8c900ec-551a-4bb2-9204-93da3a7544c5: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-bg_glass_75_dadada_1x400.png');}.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button:active,.ui-button:active,.ui-button.ui-state-active:hover{--wpr-bg-6e3f4dab-6040-4ca7-9903-7392522cd957: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-bg_glass_65_ffffff_1x400.png');}.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{--wpr-bg-aaa56802-cfca-4a8f-9cf0-6f591d885afe: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png');}.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error{--wpr-bg-04111ebb-d02f-4c48-acb5-497c704c1306: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png');}.ui-icon,.ui-widget-content .ui-icon{--wpr-bg-2316774c-68c8-4c5e-bb82-43242c6f384e: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-icons_222222_256x240.png');}.ui-widget-header .ui-icon{--wpr-bg-067a710e-3156-4e2a-a8c6-fe0de5e983a7: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-icons_222222_256x240.png');}.ui-state-hover .ui-icon,.ui-state-focus .ui-icon,.ui-button:hover .ui-icon,.ui-button:focus .ui-icon{--wpr-bg-7049f531-e22b-4f6c-9bd4-80bf8613f10a: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-icons_454545_256x240.png');}.ui-state-active .ui-icon,.ui-button:active .ui-icon{--wpr-bg-39ca51d7-a421-49a2-b790-aa0c3c0128e5: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-icons_454545_256x240.png');}.ui-state-highlight .ui-icon,.ui-button .ui-state-highlight.ui-icon{--wpr-bg-04a5f89e-64e8-4013-9e5c-2176a6867de8: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-icons_2e83ff_256x240.png');}.ui-state-error .ui-icon,.ui-state-error-text .ui-icon{--wpr-bg-e5aa3868-5bcf-4cbd-945f-4880c55d7d73: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-icons_cd0a0a_256x240.png');}.ui-button .ui-icon{--wpr-bg-9a29dc8a-ebef-483b-ad5f-1f1c3e2d2f44: url('https://code.jquery.com/ui/1.13.3/themes/smoothness/images/ui-icons_888888_256x240.png');}.rll-youtube-player .play{--wpr-bg-72be9c4f-e1c4-4fe9-ba85-655702611e66: url('wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".woocommerce .blockUI.blockOverlay","style":".woocommerce .blockUI.blockOverlay::before{--wpr-bg-ff49e37b-1b54-4cd9-b89a-72ec1fa632be: url('https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/loader.svg');}","hash":"ff49e37b-1b54-4cd9-b89a-72ec1fa632be","url":"https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/loader.svg"},{"selector":".woocommerce .loader","style":".woocommerce .loader::before{--wpr-bg-2c001416-9d30-460c-8faa-0ddd2fe1f30a: url('https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/loader.svg');}","hash":"2c001416-9d30-460c-8faa-0ddd2fe1f30a","url":"https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/loader.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.visa","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.visa{--wpr-bg-e21a317e-a62c-4fd2-93a6-b62aa5b3da7a: url('https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/visa.svg');}","hash":"e21a317e-a62c-4fd2-93a6-b62aa5b3da7a","url":"https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/visa.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.mastercard","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.mastercard{--wpr-bg-ba9ab1c8-3f3a-4666-b7d8-b2a6c9e99a34: url('https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/mastercard.svg');}","hash":"ba9ab1c8-3f3a-4666-b7d8-b2a6c9e99a34","url":"https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/mastercard.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.laser","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.laser{--wpr-bg-798e0190-ada0-436e-939a-98b78c235a3e: url('https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/laser.svg');}","hash":"798e0190-ada0-436e-939a-98b78c235a3e","url":"https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/laser.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.dinersclub","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.dinersclub{--wpr-bg-9880294d-e815-419a-8745-7ebffd3eb99c: url('https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/diners.svg');}","hash":"9880294d-e815-419a-8745-7ebffd3eb99c","url":"https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/diners.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.maestro","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.maestro{--wpr-bg-db19326e-460e-4951-b7f3-69e9194714fd: url('https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/maestro.svg');}","hash":"db19326e-460e-4951-b7f3-69e9194714fd","url":"https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/maestro.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.jcb","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.jcb{--wpr-bg-f5fa527e-1ef5-4ba2-b1b4-5abd95f36231: url('https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/jcb.svg');}","hash":"f5fa527e-1ef5-4ba2-b1b4-5abd95f36231","url":"https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/jcb.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.amex","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.amex{--wpr-bg-dfb9da7c-e4b7-4721-a9fa-39596ac0fa27: url('https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/amex.svg');}","hash":"dfb9da7c-e4b7-4721-a9fa-39596ac0fa27","url":"https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/amex.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.discover","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.discover{--wpr-bg-7ef151fa-feba-4948-9897-ce3dab987a60: url('https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/discover.svg');}","hash":"7ef151fa-feba-4948-9897-ce3dab987a60","url":"https:\/\/cariera.co\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/discover.svg"},{"selector":".ui-widget-header","style":".ui-widget-header{--wpr-bg-13c72f0e-9a8f-469f-b892-3ae0b0695553: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_highlight-soft_75_cccccc_1x100.png');}","hash":"13c72f0e-9a8f-469f-b892-3ae0b0695553","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_highlight-soft_75_cccccc_1x100.png"},{"selector":".ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,.ui-button,html .ui-button.ui-state-disabled","style":".ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,.ui-button,html .ui-button.ui-state-disabled:hover,html .ui-button.ui-state-disabled:active{--wpr-bg-e6d71e6e-d39e-40bf-872f-78911e01dddd: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_glass_75_e6e6e6_1x400.png');}","hash":"e6d71e6e-d39e-40bf-872f-78911e01dddd","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_glass_75_e6e6e6_1x400.png"},{"selector":".ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus,.ui-button","style":".ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus,.ui-button:hover,.ui-button:focus{--wpr-bg-f8c900ec-551a-4bb2-9204-93da3a7544c5: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_glass_75_dadada_1x400.png');}","hash":"f8c900ec-551a-4bb2-9204-93da3a7544c5","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_glass_75_dadada_1x400.png"},{"selector":".ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button,.ui-button,.ui-button.ui-state-active","style":".ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button:active,.ui-button:active,.ui-button.ui-state-active:hover{--wpr-bg-6e3f4dab-6040-4ca7-9903-7392522cd957: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_glass_65_ffffff_1x400.png');}","hash":"6e3f4dab-6040-4ca7-9903-7392522cd957","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_glass_65_ffffff_1x400.png"},{"selector":".ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight","style":".ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{--wpr-bg-aaa56802-cfca-4a8f-9cf0-6f591d885afe: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_glass_55_fbf9ee_1x400.png');}","hash":"aaa56802-cfca-4a8f-9cf0-6f591d885afe","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_glass_55_fbf9ee_1x400.png"},{"selector":".ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error","style":".ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error{--wpr-bg-04111ebb-d02f-4c48-acb5-497c704c1306: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_glass_95_fef1ec_1x400.png');}","hash":"04111ebb-d02f-4c48-acb5-497c704c1306","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-bg_glass_95_fef1ec_1x400.png"},{"selector":".ui-icon,.ui-widget-content .ui-icon","style":".ui-icon,.ui-widget-content .ui-icon{--wpr-bg-2316774c-68c8-4c5e-bb82-43242c6f384e: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_222222_256x240.png');}","hash":"2316774c-68c8-4c5e-bb82-43242c6f384e","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_222222_256x240.png"},{"selector":".ui-widget-header .ui-icon","style":".ui-widget-header .ui-icon{--wpr-bg-067a710e-3156-4e2a-a8c6-fe0de5e983a7: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_222222_256x240.png');}","hash":"067a710e-3156-4e2a-a8c6-fe0de5e983a7","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_222222_256x240.png"},{"selector":".ui-state-hover .ui-icon,.ui-state-focus .ui-icon,.ui-button .ui-icon","style":".ui-state-hover .ui-icon,.ui-state-focus .ui-icon,.ui-button:hover .ui-icon,.ui-button:focus .ui-icon{--wpr-bg-7049f531-e22b-4f6c-9bd4-80bf8613f10a: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_454545_256x240.png');}","hash":"7049f531-e22b-4f6c-9bd4-80bf8613f10a","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_454545_256x240.png"},{"selector":".ui-state-active .ui-icon,.ui-button .ui-icon","style":".ui-state-active .ui-icon,.ui-button:active .ui-icon{--wpr-bg-39ca51d7-a421-49a2-b790-aa0c3c0128e5: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_454545_256x240.png');}","hash":"39ca51d7-a421-49a2-b790-aa0c3c0128e5","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_454545_256x240.png"},{"selector":".ui-state-highlight .ui-icon,.ui-button .ui-state-highlight.ui-icon","style":".ui-state-highlight .ui-icon,.ui-button .ui-state-highlight.ui-icon{--wpr-bg-04a5f89e-64e8-4013-9e5c-2176a6867de8: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_2e83ff_256x240.png');}","hash":"04a5f89e-64e8-4013-9e5c-2176a6867de8","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_2e83ff_256x240.png"},{"selector":".ui-state-error .ui-icon,.ui-state-error-text .ui-icon","style":".ui-state-error .ui-icon,.ui-state-error-text .ui-icon{--wpr-bg-e5aa3868-5bcf-4cbd-945f-4880c55d7d73: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_cd0a0a_256x240.png');}","hash":"e5aa3868-5bcf-4cbd-945f-4880c55d7d73","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_cd0a0a_256x240.png"},{"selector":".ui-button .ui-icon","style":".ui-button .ui-icon{--wpr-bg-9a29dc8a-ebef-483b-ad5f-1f1c3e2d2f44: url('https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_888888_256x240.png');}","hash":"9a29dc8a-ebef-483b-ad5f-1f1c3e2d2f44","url":"https:\/\/code.jquery.com\/ui\/1.13.3\/themes\/smoothness\/images\/ui-icons_888888_256x240.png"},{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-72be9c4f-e1c4-4fe9-ba85-655702611e66: url('https:\/\/cariera.co\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"72be9c4f-e1c4-4fe9-ba85-655702611e66","url":"https:\/\/cariera.co\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script></head>
+
+<body class="resume-template-default single single-resume postid-3192 theme-cariera woocommerce-no-js user-not-logged-in cariera-child elementor-default elementor-kit-5287">
+	
+	<!-- Start Website wrapper -->
+	<div class="wrapper fullwidth">
+		
+	<div id="preloader" class="preloader4">
+		<div class="inner">
+			<div class="loading-container">
+				<img width="345" height="68" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20345%2068'%3E%3C/svg%3E" alt="Site logo" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/logo.svg"><noscript><img width="345" height="68" src="wp-content/themes/cariera/assets/images/logo.svg" alt="Site logo"></noscript>
+				<div id="object_one" class="object"></div>
+			</div>
+		</div>
+	</div>
+	
+<header class="cariera-main-header main-header header1 sticky-mobile-header">
+	<div class="header-container container-fluid">
+
+		<!-- ====== Start of Logo ====== -->
+		<div class="logo">
+							<a class="navbar-brand logo-wrapper" href="index.html" title="Cariera" rel="home">
+					<!-- INSERT YOUR LOGO HERE -->
+					<img width="150" height="30" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2030'%3E%3C/svg%3E" alt="Cariera" class="logo" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/logo.svg"><noscript><img width="150" height="30" src="wp-content/themes/cariera/assets/images/logo.svg" alt="Cariera" class="logo"></noscript>
+
+					<!-- INSERT YOUR WHITE LOGO HERE -->
+					<img width="150" height="30" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2030'%3E%3C/svg%3E" alt="Cariera" class="logo-white" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/logo-white.svg"><noscript><img width="150" height="30" src="wp-content/themes/cariera/assets/images/logo-white.svg" alt="Cariera" class="logo-white"></noscript>
+				</a>
+					</div>
+		<!-- ====== End of Logo ====== -->
+
+		<!-- ====== Start of Mobile Navigation ====== -->
+		<div class="mmenu-trigger">
+			<button id="mobile-nav-toggler" class="hamburger hamburger--collapse" type="button" aria-label="Mobile navigation toggler">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+		</div>
+		<!-- ====== Endo of Mobile Navigation ====== -->
+
+		<!-- ====== Start of Main Menu ====== -->
+		<nav class="main-nav-wrapper">
+			<ul id="menu-main-menu" class="main-menu main-nav"><li id="menu-item-3196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3196 parentid_0 dropdown parentid_0 dropdown"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Home</span></a>
+<ul class="dropdown-menu  depth_0">
+	<li id="menu-item-3212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3212 parentid_3196 parentid_3196"><a href="index.html%3Fp=3208.html"><span>Home 1</span></a></li>
+	<li id="menu-item-3256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3256 parentid_3196 parentid_3196"><a href="index.html%3Fp=163.html"><span>Home 2</span></a></li>
+	<li id="menu-item-3255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3255 parentid_3196 parentid_3196"><a href="index.html%3Fp=165.html"><span>Home 3</span></a></li>
+	<li id="menu-item-3254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3254 parentid_3196 parentid_3196"><a href="index.html%3Fp=167.html"><span>Home 4</span></a></li>
+	<li id="menu-item-3253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3253 parentid_3196 parentid_3196"><a href="index.html%3Fp=169.html"><span>Home 5</span></a></li>
+	<li id="menu-item-3252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3252 parentid_3196 parentid_3196"><a href="index.html%3Fp=171.html"><span>Home 6</span></a></li>
+	<li id="menu-item-3251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3251 parentid_3196 parentid_3196"><a href="index.html%3Fp=173.html"><span>Home 7</span></a></li>
+	<li id="menu-item-3250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3250 parentid_3196 parentid_3196"><a href="index.html%3Fp=175.html"><span>Home 8</span></a></li>
+	<li id="menu-item-3272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3272 parentid_3196 parentid_3196"><a href="index.html%3Fp=3014.html"><span>Home 9</span></a></li>
+	<li id="menu-item-3271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3271 parentid_3196 parentid_3196"><a href="index.html%3Fp=3016.html"><span>Home 10 &#8211; Resumes</span></a></li>
+	<li id="menu-item-3708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3708 parentid_3196 parentid_3196"><a href="index.html%3Fp=3668.html"><span>Home 11</span></a></li>
+	<li id="menu-item-3947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3947 parentid_3196 parentid_3196"><a href="index.html%3Fp=3771.html"><span>Home 12</span></a></li>
+	<li id="menu-item-7824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-7824 parentid_3196 parentid_3196"><a href="index.html"><span>Home 13</span><span class="items-badge"><span class="new-badge">New</span></span></a></li>
+	<li id="menu-item-7823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7823 parentid_3196 parentid_3196"><a href="index.html%3Fp=7820.html"><span>Home 14</span><span class="items-badge"><span class="new-badge">New</span></span></a></li>
+
+</ul>
+</li>
+<li id="menu-item-3197" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3197 parentid_0 dropdown parentid_0 dropdown"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Jobs</span></a>
+<ul class="dropdown-menu  depth_0">
+	<li id="menu-item-10460" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10460 parentid_3197 dropdown-submenu parentid_3197 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Browse Jobs</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-3229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3229 parentid_10460 parentid_10460"><a href="index.html%3Fp=86.html"><span>Default</span></a></li>
+		<li id="menu-item-3228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3228 parentid_10460 parentid_10460"><a href="index.html%3Fp=88.html"><span>Map Top</span></a></li>
+		<li id="menu-item-3227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3227 parentid_10460 parentid_10460"><a href="index.html%3Fp=90.html"><span>Sidebar Search</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+		<li id="menu-item-3224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3224 parentid_10460 parentid_10460"><a href="index.html%3Fp=57.html"><span>Half Map Search</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+		<li id="menu-item-10487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10487 parentid_10460 parentid_10460"><a href="index.html%3Fp=10463.html"><span>Jobs Split View</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-3225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3225 parentid_3197 parentid_3197"><a href="index.html%3Fp=94.html"><span>Post Job</span></a></li>
+	<li id="menu-item-3230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3230 parentid_3197 parentid_3197"><a href="index.html%3Fp=66.html"><span>Job Dashboard</span></a></li>
+	<li id="menu-item-3204" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3204 parentid_3197 dropdown-submenu parentid_3197 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Jobs List</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-3234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3234 parentid_3204 parentid_3204"><a href="index.html%3Fp=76.html"><span>Job List 1</span></a></li>
+		<li id="menu-item-3233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3233 parentid_3204 parentid_3204"><a href="index.html%3Fp=78.html"><span>Job List 2</span></a></li>
+		<li id="menu-item-3232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3232 parentid_3204 parentid_3204"><a href="index.html%3Fp=80.html"><span>Job List 3</span></a></li>
+		<li id="menu-item-3231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3231 parentid_3204 parentid_3204"><a href="index.html%3Fp=82.html"><span>Job List 4</span></a></li>
+		<li id="menu-item-3238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3238 parentid_3204 parentid_3204"><a href="index.html%3Fp=84.html"><span>Job List 5</span></a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-3205" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3205 parentid_3197 dropdown-submenu parentid_3197 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Jobs Grid</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-3237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3237 parentid_3205 parentid_3205"><a href="index.html%3Fp=68.html"><span>Job Grid 1</span></a></li>
+		<li id="menu-item-3236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3236 parentid_3205 parentid_3205"><a href="index.html%3Fp=72.html"><span>Job Grid 2</span></a></li>
+		<li id="menu-item-3235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3235 parentid_3205 parentid_3205"><a href="index.html%3Fp=74.html"><span>Job Grid 3</span></a></li>
+		<li id="menu-item-5079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5079 parentid_3205 parentid_3205"><a href="index.html%3Fp=5074.html"><span>Job Grid 4</span></a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-5657" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5657 parentid_3197 dropdown-submenu parentid_3197 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Single Jobs</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-5659" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5659 parentid_5657 parentid_5657"><a href="job/ios-app-developer/index.html%3Fjob-layout=v1.html"><span>Job Layout 1</span></a></li>
+		<li id="menu-item-5660" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5660 parentid_5657 parentid_5657"><a href="job/ios-app-developer/index.html%3Fjob-layout=v2.html"><span>Job Layout 2</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+		<li id="menu-item-5661" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5661 parentid_5657 parentid_5657"><a href="job/ios-app-developer/index.html%3Fjob-layout=v3.html"><span>Job Layout 3</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+
+	</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-3198" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3198 parentid_0 dropdown parentid_0 dropdown"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Companies</span></a>
+<ul class="dropdown-menu  depth_0">
+	<li id="menu-item-10461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10461 parentid_3198 dropdown-submenu parentid_3198 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Browse Companies</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-3221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3221 parentid_10461 parentid_10461"><a href="companies/index.html"><span>Default</span></a></li>
+		<li id="menu-item-9806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9806 parentid_10461 parentid_10461"><a href="index.html%3Fp=9775.html"><span>Map Top</span></a></li>
+		<li id="menu-item-3220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3220 parentid_10461 parentid_10461"><a href="index.html%3Fp=22.html"><span>Sidebar Search</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+		<li id="menu-item-3222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3222 parentid_10461 parentid_10461"><a href="index.html%3Fp=55.html"><span>Half Map Search</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+		<li id="menu-item-10485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10485 parentid_10461 parentid_10461"><a href="index.html%3Fp=10467.html"><span>Company Split View</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-3218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3218 parentid_3198 parentid_3198"><a href="index.html%3Fp=31.html"><span>Companies List</span></a></li>
+	<li id="menu-item-3217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3217 parentid_3198 parentid_3198"><a href="index.html%3Fp=33.html"><span>Submit Company</span></a></li>
+	<li id="menu-item-3219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3219 parentid_3198 parentid_3198"><a href="index.html%3Fp=29.html"><span>Company Dashboard</span></a></li>
+	<li id="menu-item-3202" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3202 parentid_3198 dropdown-submenu parentid_3198 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Companies List</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-3216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3216 parentid_3202 parentid_3202"><a href="index.html%3Fp=35.html"><span>Company List 1</span></a></li>
+		<li id="menu-item-3215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3215 parentid_3202 parentid_3202"><a href="index.html%3Fp=37.html"><span>Company List 2</span></a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-3203" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3203 parentid_3198 dropdown-submenu parentid_3198 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Companies Grid</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-3214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3214 parentid_3203 parentid_3203"><a href="index.html%3Fp=39.html"><span>Company Grid 1</span></a></li>
+		<li id="menu-item-3213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3213 parentid_3203 parentid_3203"><a href="index.html%3Fp=41.html"><span>Company Grid 2</span></a></li>
+		<li id="menu-item-8229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8229 parentid_3203 parentid_3203"><a href="index.html%3Fp=8224.html"><span>Company Grid 3</span><span class="items-badge"><span class="new-badge">New</span></span></a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-5662" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5662 parentid_3198 dropdown-submenu parentid_3198 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Single Company</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-5663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5663 parentid_5662 parentid_5662"><a href="company/themeforest/index.html%3Fcompany-layout=v1.html"><span>Company Layout 1</span></a></li>
+		<li id="menu-item-5664" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5664 parentid_5662 parentid_5662"><a href="company/themeforest/index.html%3Fcompany-layout=v2.html"><span>Company Layout 2</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+		<li id="menu-item-5665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5665 parentid_5662 parentid_5662"><a href="company/themeforest/index.html%3Fcompany-layout=v3.html"><span>Company Layout 3</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+
+	</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-3199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3199 parentid_0 dropdown parentid_0 dropdown"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Resumes</span></a>
+<ul class="dropdown-menu  depth_0">
+	<li id="menu-item-10462" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10462 parentid_3199 dropdown-submenu parentid_3199 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Browse Resumes</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-3246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3246 parentid_10462 parentid_10462"><a href="resumes/index.html"><span>Default</span></a></li>
+		<li id="menu-item-9805" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9805 parentid_10462 parentid_10462"><a href="index.html%3Fp=9798.html"><span>Map Top</span></a></li>
+		<li id="menu-item-3245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3245 parentid_10462 parentid_10462"><a href="index.html%3Fp=116.html"><span>Sidebar Search</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+		<li id="menu-item-3223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3223 parentid_10462 parentid_10462"><a href="index.html%3Fp=59.html"><span>Half Map Search</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+		<li id="menu-item-10486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10486 parentid_10462 parentid_10462"><a href="index.html%3Fp=10465.html"><span>Resume Split View</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-3244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3244 parentid_3199 parentid_3199"><a href="index.html%3Fp=118.html"><span>Submit Resume</span></a></li>
+	<li id="menu-item-3243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3243 parentid_3199 parentid_3199"><a href="index.html%3Fp=120.html"><span>Candidate Dashboard</span></a></li>
+	<li id="menu-item-3206" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3206 parentid_3199 dropdown-submenu parentid_3199 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Resumes List</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-3242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3242 parentid_3206 parentid_3206"><a href="index.html%3Fp=122.html"><span>Resume List 1</span></a></li>
+		<li id="menu-item-3241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3241 parentid_3206 parentid_3206"><a href="index.html%3Fp=124.html"><span>Resume List 2</span></a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-3207" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3207 parentid_3199 dropdown-submenu parentid_3199 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Resumes Grid</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-3240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3240 parentid_3207 parentid_3207"><a href="index.html%3Fp=126.html"><span>Resume Grid 1</span></a></li>
+		<li id="menu-item-3239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3239 parentid_3207 parentid_3207"><a href="index.html%3Fp=128.html"><span>Resume Grid 2</span></a></li>
+		<li id="menu-item-7470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7470 parentid_3207 parentid_3207"><a href="index.html%3Fp=7464.html"><span>Resume Grid 3</span></a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-5666" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5666 parentid_3199 dropdown-submenu parentid_3199 dropdown-submenu"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Single Resume</span></a>
+	<ul class="dropdown-menu sub-menu depth_1">
+		<li id="menu-item-5667" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5667 parentid_5666 parentid_5666"><a href="resume/robin-e-smith/index.html%3Fresume-layout=v1.html"><span>Resume Layout 1</span></a></li>
+		<li id="menu-item-5668" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5668 parentid_5666 parentid_5666"><a href="resume/robin-e-smith/index.html%3Fresume-layout=v2.html"><span>Resume Layout 2</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+		<li id="menu-item-5669" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5669 parentid_5666 parentid_5666"><a href="resume/robin-e-smith/index.html%3Fresume-layout=v3.html"><span>Resume Layout 3</span><span class="items-badge"><span class="hot-badge">Hot</span></span></a></li>
+
+	</ul>
+</li>
+
+</ul>
+</li>
+<li id="menu-item-3200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3200 parentid_0 dropdown parentid_0 dropdown"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Pages</span></a>
+<ul class="dropdown-menu  depth_0">
+	<li id="menu-item-3280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3280 parentid_3200 parentid_3200"><a href="index.html%3Fp=3155.html"><span>About Us</span></a></li>
+	<li id="menu-item-10782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10782 parentid_3200 parentid_3200"><a href="index.html%3Fp=10709.html"><span>Become Candidate</span><span class="items-badge"><span class="new-badge">New</span></span></a></li>
+	<li id="menu-item-10783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10783 parentid_3200 parentid_3200"><a href="index.html%3Fp=10706.html"><span>Become Employer</span><span class="items-badge"><span class="new-badge">New</span></span></a></li>
+	<li id="menu-item-3273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3273 parentid_3200 parentid_3200"><a href="index.html%3Fp=3106.html"><span>Company Career</span></a></li>
+	<li id="menu-item-3276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3276 parentid_3200 parentid_3200"><a href="index.html%3Fp=3111.html"><span>Contact Us</span></a></li>
+	<li id="menu-item-3274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3274 parentid_3200 parentid_3200"><a href="index.html%3Fp=3104.html"><span>FAQ</span></a></li>
+	<li id="menu-item-3270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3270 parentid_3200 parentid_3200"><a href="index.html%3Fp=2970.html"><span>Login – Register</span></a></li>
+	<li id="menu-item-3269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3269 parentid_3200 parentid_3200"><a href="index.html%3Fp=2972.html"><span>Privacy Policy</span></a></li>
+	<li id="menu-item-3275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3275 parentid_3200 parentid_3200"><a href="index.html%3Fp=3102.html"><span>Terms &#038; Conditions</span></a></li>
+	<li id="menu-item-4436" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4436 parentid_3200 parentid_3200"><a target="_blank" rel="noopener" href="https://docs.cariera.co"><span>Documentation</span></a></li>
+
+</ul>
+</li>
+<li id="menu-item-3201" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3201 parentid_0 dropdown parentid_0 dropdown"><a href="index.html%3Fp=3192.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Shop</span></a>
+<ul class="dropdown-menu  depth_0">
+	<li id="menu-item-3247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3247 parentid_3201 parentid_3201"><a href="shop/index.html"><span>Products</span></a></li>
+	<li id="menu-item-3248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3248 parentid_3201 parentid_3201"><a href="index.html%3Fp=146.html"><span>Cart</span></a></li>
+	<li id="menu-item-3249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3249 parentid_3201 parentid_3201"><a href="checkout/index.html"><span>Checkout</span></a></li>
+
+</ul>
+</li>
+<li id="menu-item-3211" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-3211 parentid_0 parentid_0"><a href="blog/index.html"><span>Blog</span></a></li>
+</ul>		</nav>
+		<!-- ====== End of Main Menu ====== -->
+
+		
+<div class="extra-menu">
+	
+<div class="extra-menu-item extra-shop mini-cart woocommerce">
+	<a href="index.html%3Fp=3192.html#shopping-cart-modal" class="cart-contents popup-with-zoom-anim" aria-label="Shopping cart modal trigger">
+		<i class="las la-shopping-bag"></i>
+		<span class="notification-count cart-count counter-hidden">0</span>
+	</a>
+</div>
+	<div class="extra-menu-item extra-user">
+
+					<a href="index.html%3Fp=3192.html#login-register-popup" class="popup-with-zoom-anim" aria-label="User login &amp; register trigger.">
+						<i class="las la-user"></i>
+		</a>
+	</div>
+	
+<div class="extra-menu-item extra-add-listing">
+			<a href="index.html%3Fp=94.html" class="header-cta header-cta-job btn btn-main btn-effect btn-small">
+			Post a Job			<i class="las la-plus-circle"></i>
+		</a>
+		</div>
+</div>
+	</div>
+</header>
+
+<main id="post-3192" class="single-resume-page single-resume-v1">
+		<section class="page-header resume-header overlay-gradient" ></section>
+
+	<section class="single-resume-content">
+		<div class="container">
+			<div class="candidate-main-resume">
+				<div class="candidate-extra-info">
+					<div class="left-side"><ul class="candidate-categories"><li><a href="resume-category/reporter/index.html">Reporter</a></li><li><a href="resume-category/support/index.html">Support</a></li></ul></div>
+					<div class="right-side">
+						<div class="location">
+							<i class="las la-map-marker"></i>
+							<span class="candidate-location">Helsinki, Finland</span>						</div>
+
+						<div class="published-date">
+							<i class="las la-clock"></i>
+							Member Since  2024						</div>
+
+											</div>
+				</div>
+
+				<!-- Candidate Info Wrapper -->
+				<div class="candidate-info-wrapper">
+					<div class="candidate-photo">
+						<img width="120" height="120" class="candidate_photo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3E%3C/svg%3E" alt="Photo" data-lazy-src="https://cariera.co/wp-content/uploads/2020/05/candidate6.jpg" /><noscript><img width="120" height="120" class="candidate_photo" src="wp-content/uploads/2020/05/candidate6.jpg" alt="Photo" /></noscript>					</div>
+
+					<div class="candidate">
+						<h1 class="title">
+							Thomas V. Stpierre													</h1>
+
+						
+							<div class="candidate-links">
+																	<span class="candidate-email">
+										<a href="cdn-cgi/l/email-protection.html#f89b99969c919c998c9dc9c8b89b998a919d8a99d69b97"><i class="las la-envelope"></i><span class="__cf_email__" data-cfemail="8eedefe0eae7eaeffaebbfbeceedeffce7ebfcefa0ede1">[email&#160;protected]</span></a>
+									</span>
+															</div>
+
+							
+						<div class="candidate-social"><a href="https://#" class="candidate-facebook" aria-label="Candidate&#039;s Facebook account"><i class="lab la-facebook-f"></i></a><a href="https://#" class="candidate-twitter-x" aria-label="Candidate&#039;s X account"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a><a href="https://#" class="candidate-linkedin" aria-label="Candidate&#039;s LinkedIn account"><i class="lab la-linkedin-in"></i></a><a href="https://#" class="candidate-instagram" aria-label="Candidate&#039;s Instagram account"><i class="lab la-instagram"></i></a><a href="https://#" class="candidate-youtube" aria-label="Candidate&#039;s Youtube account"><i class="lab la-youtube"></i></a></div>					</div>
+
+					<!-- Bookmark -->
+					<div class="bookmark-wrapper">
+						
+<div class="resume-private-message">
+	
+		<a href="index.html%3Fp=3192.html#login-register-popup" class="btn btn-main listing-btn popup-with-zoom-anim">
+			Direct message		</a>
+	</div>
+<a href="index.html%3Fp=3192.html#login-register-popup" class="listing-bookmark btn btn-main btn-effect popup-with-zoom-anim">Login to bookmark</a>
+<!-- Bookmark Popup -->
+<div id="bookmark-popup-3192" class="small-dialog zoom-anim-dialog mfp-hide">
+	<div class="bookmarks-popup">
+		<div class="small-dialog-headline">
+			<h3 class="title">Bookmark Details</h3>
+		</div>
+
+		<div class="small-dialog-content text-left">
+			<div class="job-manager-form wp-job-manager-bookmarks-form">
+	<div><a class="bookmark-notice" href="./wp-login.php%3Fredirect_to=https:%252F%252Fcariera.co%252Fresume%252Fthomas-v-stpierre%252F.html">Login to bookmark this Resume</a></div>
+</div>
+            
+		</div>
+	</div>
+</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main Candidate Content -->
+			<div class="resume-main row pb80">
+				<div class="col-md-8 col-xs-12">
+					
+		<div id="candidate-description" class="candidate-description">
+			<h2 class="content-title">About the Candidate</h2>
+			<p class="mt20">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex.</p>
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+<h5 class="mt40">Personal Characteristics:</h5>
+<ul class="list mt20">
+<li>Personally passionate and up to date with current trends and technologies, committed to quality and comfortable working with adult media.</li>
+<li>Bachelor or Master degree level educational background.</li>
+<li>Available to work required shifts including weekends, evenings and holidays.</li>
+<li>I take constructive criticism well and I am comfortable voicing opinions.</li>
+</ul>
+		</div>
+		
+<div id="candidate-portfolio" class="candidate-portfolio">
+	<h2 class="content-title">Candidate Portfolio</h2>
+
+	<div class="gallery-wrapper">
+		
+			<div class="portfolio-item">
+				<a href="wp-content/uploads/2020/05/handshake.jpg" data-elementor-lightbox-slideshow="candidate-gallery" class="popup-image-gallery">
+					<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" width="200" height="200" alt="Candidate portfolio image." data-lazy-src="https://cariera.co/wp-content/uploads/2020/05/handshake.jpg" /><noscript><img src="wp-content/uploads/2020/05/handshake.jpg" width="200" height="200" alt="Candidate portfolio image." /></noscript>
+				</a>
+
+							</div>
+			
+			
+			<div class="portfolio-item">
+				<a href="wp-content/uploads/2020/05/pricing3.jpg" data-elementor-lightbox-slideshow="candidate-gallery" class="popup-image-gallery">
+					<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" width="200" height="200" alt="Candidate portfolio image." data-lazy-src="https://cariera.co/wp-content/uploads/2020/05/pricing3.jpg" /><noscript><img src="wp-content/uploads/2020/05/pricing3.jpg" width="200" height="200" alt="Candidate portfolio image." /></noscript>
+				</a>
+
+							</div>
+			
+			
+			<div class="portfolio-item">
+				<a href="wp-content/uploads/2020/05/home.jpg" data-elementor-lightbox-slideshow="candidate-gallery" class="popup-image-gallery">
+					<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" width="200" height="200" alt="Candidate portfolio image." data-lazy-src="https://cariera.co/wp-content/uploads/2020/05/home.jpg" /><noscript><img src="wp-content/uploads/2020/05/home.jpg" width="200" height="200" alt="Candidate portfolio image." /></noscript>
+				</a>
+
+							</div>
+			
+			
+			<div class="portfolio-item">
+				<a href="wp-content/uploads/2020/05/home-bg.jpg" data-elementor-lightbox-slideshow="candidate-gallery" class="popup-image-gallery">
+					<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" width="200" height="200" alt="Candidate portfolio image." data-lazy-src="https://cariera.co/wp-content/uploads/2020/05/home-bg.jpg" /><noscript><img loading="lazy" src="wp-content/uploads/2020/05/home-bg.jpg" width="200" height="200" alt="Candidate portfolio image." /></noscript>
+				</a>
+
+							</div>
+			
+				</div>
+</div>
+			<div id="candidate-qualification" class="candidate-education">
+				<h2>Education</h2>
+
+									<div class="education-item">                                            
+						<small class="time">September 20011 - June 2013</small>
+						<div class="education-title">
+							<strong class="location">Stanford University</strong>
+							<span class="qualification">Bachelor of Applied Science</span>
+						</div>
+
+						<div class="education-body">
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						</div>
+					</div>
+									<div class="education-item">                                            
+						<small class="time">June 2009 - March 2011</small>
+						<div class="education-title">
+							<strong class="location">Massachusetts Institute of Technology</strong>
+							<span class="qualification">Bachelor of Science</span>
+						</div>
+
+						<div class="education-body">
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						</div>
+					</div>
+							</div>
+						<div id="candidate-experience" class="candidate-experience">
+				<h2>Experience</h2>
+
+									<div class="experience-item">
+						<small class="time">July 2015 - now</small>
+						<div class="experience-title">
+							<strong class="employer">Facebook</strong>
+							<span class="position">Reporter</span>
+						</div>
+
+						<div class="experience-body">
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						</div>
+					</div>
+
+									<div class="experience-item">
+						<small class="time">September 2013 - June 2015</small>
+						<div class="experience-title">
+							<strong class="employer">Twitter</strong>
+							<span class="position">Reporter</span>
+						</div>
+
+						<div class="experience-body">
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						</div>
+					</div>
+
+							</div>
+			
+		<div id="candidate-video" class="candidate-video-wrapper">
+			<h2 class="content-title">Candidate Video</h2>
+			<div class="candidate-video"><div class="rll-youtube-player" data-src="https://www.youtube.com/embed/7e90gBu4pas" data-id="7e90gBu4pas" data-query="feature=oembed" data-alt="Working at Envato"></div><noscript><iframe title="Working at Envato" width="980" height="551" src="https://www.youtube.com/embed/7e90gBu4pas?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></noscript></div>		</div>
+		<div class="social-sharer-wrapper mt20"><a href="index.html%3Fp=3192.html#social-share-modal" class="btn btn-main popup-with-zoom-anim">share</a></div>
+<a class="print-page" href="javascript:void(0)" onclick="window.print();" aria-label="Print"><i class="las la-print"></i>Print Resume</a>				</div>
+
+				<div class="col-md-4 col-xs-12 resume-sidebar">
+					<div class="sidebar-info">
+						
+<h2 class="content-title">Candidate Overview</h2>
+<aside class="widget widget-candidate-overview">
+
+	
+	<div class="single-resume-overview-detail single-resume-overview-occupation">
+		<div class="icon">
+			<i class="las la-briefcase"></i>
+		</div>
+
+		<div class="content">
+			<h3>Occupation</h3>
+			<span>Reporter</span>
+		</div>
+	</div>
+
+			<div class="single-resume-overview-detail single-resume-overview-category">
+			<div class="icon">
+				<i class="lar la-star"></i>
+			</div>
+
+			<div class="content">
+				<h3>Category</h3>
+				<span><ul class="categories"><li><a href="resume-category/reporter/index.html" target="_blank">Reporter</a></li><li><a href="resume-category/support/index.html" target="_blank">Support</a></li></ul></span>
+			</div>
+		</div>
+	
+			<div class="single-resume-overview-detail single-resume-overview-rate">
+			<div class="icon">
+				<i class="las la-hourglass-end"></i>
+			</div>
+
+			<div class="content">
+				<h3>Rate</h3>
+				<span>&#036;100/hour</span>
+			</div>
+		</div>
+	
+			<div class="single-resume-overview-detail single-resume-overview-education">
+			<div class="icon">
+				<i class="las la-graduation-cap"></i>
+			</div>
+
+			<div class="content">
+				<h3>Education Level</h3>
+				<span>Bachelor Degree</span>
+			</div>
+		</div>
+	
+			<div class="single-resume-overview-detail single-resume-overview-languages">
+			<div class="icon">
+				<i class="las la-language"></i>
+			</div>
+
+			<div class="content">
+				<h3>Languages</h3>
+				<span>English, Norwegian</span>
+			</div>
+		</div>
+	
+			<div class="single-resume-overview-detail single-resume-overview-experience">
+			<div class="icon">
+				<i class="las la-rocket"></i>
+			</div>
+
+			<div class="content">
+				<h3>Experience</h3>
+				<span>1-2 Years</span>
+			</div>
+		</div>
+	
+	</aside>
+
+<div id="resume-map" class="single-resume-map" data-longitude="24.9383791" data-latitude="60.1698557" data-thumbnail="https://cariera.co/wp-content/uploads/2020/05/candidate6.jpg" data-id="listing-id-3192"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+<section class="related-resumes">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="title">Related Resumes</h2>
+
+				<!-- Start of Slider -->
+				<ul class="resumes related-resumes-slider" data-autoplay="0" data-autoplay-speed="2500">                    
+					
+<li class="resume resume-grid single_resume_3 col-lg-4 col-md-6 col-xs-12 post-809 type-resume status-publish hentry resume_category-support resume_skill-css3 resume_skill-html5 resume_skill-photoshop resume_education_level-bachelor-degree resume_experience-10-years" data-latitude="52.5200066" data-longitude="13.404954" data-thumbnail="https://cariera.co/wp-content/uploads/2020/05/candidate4.jpg" data-id="listing-id-809" data-featured="">
+	<a href="index.html%3Fp=809.html">
+		<div class="resume-info-wrapper">
+			<div class="candidate-photo">
+				<img width="120" height="120" class="candidate_photo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3E%3C/svg%3E" alt="Photo" data-lazy-src="https://cariera.co/wp-content/uploads/2020/05/candidate4.jpg" /><noscript><img width="120" height="120" class="candidate_photo" src="wp-content/uploads/2020/05/candidate4.jpg" alt="Photo" /></noscript>			</div>
+
+			<!-- Resume Details -->
+			<div class="resume-details">
+				<h2 class="candidate-title">Eric Edwards</h2>
+
+				<ul>
+					<li class="location"><i class="las la-map-marker"></i><span class="candidate-location">Berlin, Germany</span></li>
+
+					
+				</ul>
+			</div>
+		</div>
+
+		<!-- Resume Extras -->
+		<div class="resume-extras">
+			<div class="resume-title-icon"></div>
+			<span class="professional-title">Photographer</span>
+		</div>
+	</a>
+</li>
+
+<li class="resume resume-grid single_resume_3 col-lg-4 col-md-6 col-xs-12 post-3189 type-resume status-publish hentry resume_category-support resume_category-web-analyst resume_education_level-master-degree resume_experience-6-9-years" data-latitude="25.7616798" data-longitude="-80.1917902" data-thumbnail="https://cariera.co/wp-content/uploads/2020/05/candidate5.jpg" data-id="listing-id-3189" data-featured="">
+	<a href="index.html%3Fp=3189.html">
+		<div class="resume-info-wrapper">
+			<div class="candidate-photo">
+				<img width="120" height="120" class="candidate_photo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3E%3C/svg%3E" alt="Photo" data-lazy-src="https://cariera.co/wp-content/uploads/2020/05/candidate5.jpg" /><noscript><img width="120" height="120" class="candidate_photo" src="wp-content/uploads/2020/05/candidate5.jpg" alt="Photo" /></noscript>			</div>
+
+			<!-- Resume Details -->
+			<div class="resume-details">
+				<h2 class="candidate-title">Robin E. Smith</h2>
+
+				<ul>
+					<li class="location"><i class="las la-map-marker"></i><span class="candidate-location">Miami, FL, USA</span></li>
+
+					
+				</ul>
+			</div>
+		</div>
+
+		<!-- Resume Extras -->
+		<div class="resume-extras">
+			<div class="resume-title-icon"></div>
+			<span class="professional-title">Web Analyst</span>
+		</div>
+	</a>
+</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+
+
+<footer class="main-footer footer-default">
+	
+				<div class="footer-widget-area footer-info">
+					<div class="container">
+						<div class="row">
+															<div class="col-sm-6 col-xs-6">
+									<aside id="text-1" class="widget footer-widget widget_text"><h3 class="widget-title widget-title-footer pb40">About Cariera</h3>			<div class="textwidget"><p>Cariera is more than a job board, it&#8217;s a dynamic ecosystem where talent meets opportunity. Elevate your career with us as you navigate through a plethora of openings!</p>
+<div style="display: flex;"><a class="footer-img" href="https://1.envato.market/cariera-flutter" target="_blank" rel="noopener"><img width="150" height="45" decoding="async" style="margin-right: 10px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2045'%3E%3C/svg%3E" alt="" data-lazy-src="https://cariera.co/wp-content/uploads/2024/01/appstore.png" /><noscript><img width="150" height="45" decoding="async" style="margin-right: 10px;" src="wp-content/uploads/2024/01/appstore.png" alt="" loading="lazy" /></noscript></a><br />
+<a class="footer-img" href="https://1.envato.market/cariera-flutter" target="_blank" rel="noopener"><img width="150" height="45" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2045'%3E%3C/svg%3E" alt="" data-lazy-src="https://cariera.co/wp-content/uploads/2024/01/google-store.png" /><noscript><img width="150" height="45" decoding="async" src="wp-content/uploads/2024/01/google-store.png" alt="" loading="lazy" /></noscript></a></div>
+</div>
+		</aside>								</div>
+							
+															<div class="col-md-2 col-sm-6 col-xs-6">
+									<aside id="block-2" class="widget footer-widget widget_block"><h3 class="widget-title widget-title-footer pb40">For Candidates</h3>
+<ul>
+	<li><a href="index.html%3Fp=3192.html#">Companies</a></li>
+	<li><a href="index.html%3Fp=3192.html#">Companies List</a></li>
+	<li><a href="index.html%3Fp=3192.html#">Jobs</a></li>
+	<li><a href="index.html%3Fp=3192.html#">Job Alerts</a></li>
+	<li><a href="index.html%3Fp=3192.html#">Submit Resume</a></li>
+</ul></aside>								</div>
+							
+															<div class="col-md-2 col-sm-6 col-xs-6">
+									<aside id="text-2" class="widget footer-widget widget_text"><h3 class="widget-title widget-title-footer pb40">For Employers</h3>			<div class="textwidget"><ul>
+<li><a href="index.html%3Fp=3192.html#">Job Dashboard</a></li>
+<li><a href="index.html%3Fp=3192.html#">My Bookmarks</a></li>
+<li><a href="index.html%3Fp=3192.html#">Post Company</a></li>
+<li><a href="index.html%3Fp=3192.html#">Post Job</a></li>
+<li><a href="index.html%3Fp=3192.html#">Resumes</a></li>
+</ul>
+</div>
+		</aside>								</div>
+							
+															<div class="col-md-2 col-sm-6 col-xs-6">
+									<aside id="text-3" class="widget footer-widget widget_text"><h3 class="widget-title widget-title-footer pb40">Pages</h3>			<div class="textwidget"><ul>
+<li><a href="index.html%3Fp=3192.html#">Blog</a></li>
+<li><a href="index.html%3Fp=3192.html#">Company Career</a></li>
+<li><a href="index.html%3Fp=3192.html#">Contact Us</a></li>
+<li><a href="index.html%3Fp=3192.html#">Our Terms</a></li>
+<li><a href="index.html%3Fp=3192.html#">Shop</a></li>
+</ul>
+</div>
+		</aside>								</div>
+													</div>
+					</div>
+				</div>
+				
+	
+<div class="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<h3 class="copyright-text">Copyright &copy; Cariera. Developed by <a href="https://1.envato.market/MOKEn" target="_blank">Gnodesign</a></h3>
+			</div>
+
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				
+<ul class="social-btns text-right">
+			<li class="list-inline-item">
+			<a class="social-btn-roll facebook" href="https://www.facebook.com/gnodesign" target="_blank" aria-label="Social media link">
+				<div class="social-btn-roll-icons">
+
+												<i class="social-btn-roll-icon lab la-facebook"></i>
+							<i class="social-btn-roll-icon lab la-facebook"></i>
+											</div>
+			</a>
+		</li>
+			<li class="list-inline-item">
+			<a class="social-btn-roll instagram" href="https://www.instagram.com/gno_design/" target="_blank" aria-label="Social media link">
+				<div class="social-btn-roll-icons">
+
+												<i class="social-btn-roll-icon lab la-instagram"></i>
+							<i class="social-btn-roll-icon lab la-instagram"></i>
+											</div>
+			</a>
+		</li>
+			<li class="list-inline-item">
+			<a class="social-btn-roll youtube" href="https://www.youtube.com/channel/UCgHmCnZC7L8ggXTBYP28spQ" target="_blank" aria-label="Social media link">
+				<div class="social-btn-roll-icons">
+
+												<i class="social-btn-roll-icon lab la-youtube"></i>
+							<i class="social-btn-roll-icon lab la-youtube"></i>
+											</div>
+			</a>
+		</li>
+	</ul>
+			</div>                    
+		</div>
+	</div>
+</div>
+</footer>
+
+</div>
+<!-- End of Website wrapper -->
+
+<div class="cariera-demo-actions">
+	<ul class="demo-actions">
+		<li>
+			<a href="https://docs.cariera.co/" target="_blank">
+				<i class="las la-book-open"></i>
+				<span class="demo-tooltip">Documentation<span></span></span>
+			</a>
+		</li>
+		<li>
+			<a href="https://support.gnodesign.com/" target="_blank">
+				<i class="las la-headset"></i>
+				<span class="demo-tooltip">Support<span></span></span>
+			</a>
+		</li>
+		<li>
+			<a href="https://1.envato.market/WL5MX" target="_blank">
+				<i class="las la-shopping-cart"></i>
+				<span class="demo-tooltip">Purchase Cariera: 79$<span></span></span>
+			</a>
+		</li>
+		<li>
+			<a href="index.html%3Fp=3192.html#" class="compatible-plugins">
+				<i class="las la-rocket"></i>
+				<span class="demo-tooltip">Compatible Addons<span></span></span>
+			</a>
+		</li>
+		<li>
+			<a href="https://1.envato.market/cariera-flutter" target="_blank">
+				<i class="las la-mobile"></i>
+				<span class="demo-tooltip">Mobile Flutter App<span></span></span>
+			</a>
+		</li>
+	</ul>
+
+	<div class="compatible-addons">
+		<h5 class="title">Compatible Third Party Plugins</h5>
+	
+					<div class="product-item">
+				<a href="https://1.envato.market/cariera-events" target="_blank">
+					<div class="theme-img">
+						<img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" lazy="loading" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/plugins/cariera-events.jpg"><noscript><img width="300" height="300" src="wp-content/themes/cariera/assets/images/plugins/cariera-events.jpg" lazy="loading"></noscript>
+					</div>
+					<div class="title">Cariera Events</div>
+				</a>
+			</div>
+					<div class="product-item">
+				<a href="https://plugins.smyl.es/wp-job-manager-search-and-filtering" target="_blank">
+					<div class="theme-img">
+						<img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" lazy="loading" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/plugins/wpjm-sf.jpg"><noscript><img width="300" height="300" src="wp-content/themes/cariera/assets/images/plugins/wpjm-sf.jpg" lazy="loading"></noscript>
+					</div>
+					<div class="title">S&amp;F for WPJM</div>
+				</a>
+			</div>
+					<div class="product-item">
+				<a href="https://plugins.smyl.es/wp-job-manager-field-editor/" target="_blank">
+					<div class="theme-img">
+						<img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" lazy="loading" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/plugins/wpjm-field-editor.jpg"><noscript><img width="300" height="300" src="wp-content/themes/cariera/assets/images/plugins/wpjm-field-editor.jpg" lazy="loading"></noscript>
+					</div>
+					<div class="title">WPJM Field Editor</div>
+				</a>
+			</div>
+					<div class="product-item">
+				<a href="https://plugins.smyl.es/wp-job-manager-packages/" target="_blank">
+					<div class="theme-img">
+						<img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" lazy="loading" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/plugins/wpjm-packages.jpg"><noscript><img width="300" height="300" src="wp-content/themes/cariera/assets/images/plugins/wpjm-packages.jpg" lazy="loading"></noscript>
+					</div>
+					<div class="title">WPJM Packages</div>
+				</a>
+			</div>
+					<div class="product-item">
+				<a href="https://plugins.smyl.es/wp-job-manager-resume-alerts/" target="_blank">
+					<div class="theme-img">
+						<img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" lazy="loading" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/plugins/wpjm-resume-alerts.jpg"><noscript><img width="300" height="300" src="wp-content/themes/cariera/assets/images/plugins/wpjm-resume-alerts.jpg" lazy="loading"></noscript>
+					</div>
+					<div class="title">WPJM Resumes Alerts</div>
+				</a>
+			</div>
+					<div class="product-item">
+				<a href="https://plugins.smyl.es/wp-job-manager-visibility/" target="_blank">
+					<div class="theme-img">
+						<img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" lazy="loading" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/plugins/wpjm-visibility.jpg"><noscript><img width="300" height="300" src="wp-content/themes/cariera/assets/images/plugins/wpjm-visibility.jpg" lazy="loading"></noscript>
+					</div>
+					<div class="title">WPJM Visibility</div>
+				</a>
+			</div>
+					<div class="product-item">
+				<a href="https://plugins.smyl.es/wp-job-manager-emails/" target="_blank">
+					<div class="theme-img">
+						<img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" lazy="loading" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/plugins/wpjm-emails.jpg"><noscript><img width="300" height="300" src="wp-content/themes/cariera/assets/images/plugins/wpjm-emails.jpg" lazy="loading"></noscript>
+					</div>
+					<div class="title">WPJM Emails</div>
+				</a>
+			</div>
+					<div class="product-item">
+				<a href="https://1.envato.market/Linkedin-wpjm" target="_blank">
+					<div class="theme-img">
+						<img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" lazy="loading" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/plugins/wpjm-linkedin.jpg"><noscript><img width="300" height="300" src="wp-content/themes/cariera/assets/images/plugins/wpjm-linkedin.jpg" lazy="loading"></noscript>
+					</div>
+					<div class="title">Linkedin for WPJM</div>
+				</a>
+			</div>
+					<div class="product-item">
+				<a href="https://1.envato.market/wpjm-essentials" target="_blank">
+					<div class="theme-img">
+						<img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" lazy="loading" data-lazy-src="https://cariera.co/wp-content/themes/cariera/assets/images/plugins/wpjm-essentials.jpg"><noscript><img width="300" height="300" src="wp-content/themes/cariera/assets/images/plugins/wpjm-essentials.jpg" lazy="loading"></noscript>
+					</div>
+					<div class="title">Essentials for WPJM</div>
+				</a>
+			</div>
+			</div>
+</div>
+
+<a href="index.html%3Fp=3192.html#" class="back-top"><i class="las la-angle-up"></i></a>
+
+<!-- Start of Login & Register Popup -->
+<div id="login-register-popup" class="small-dialog zoom-anim-dialog mfp-hide">
+
+	<!-- Start of Signin wrapper -->
+	<div class="signin-wrapper">
+		<div class="small-dialog-headline">
+			<h3 class="title">Sign in</h3>
+		</div>
+
+		<div class="small-dialog-content">
+			
+<div class="job-manager-message account-info">
+	<p>
+		Username: <strong>employer</strong> or <strong>candidate</strong>	</p>
+	<p>
+		Password: <strong>demo</strong>	</p>
+</div>
+
+<form id="cariera_login" method="post">
+	<p class="status"></p>
+
+	<div class="form-group">
+		<label for="username">Username or Email</label>
+		<input type="text" class="form-control" id="username" name="username" placeholder="Your Username or Email" autocomplete="off" />
+	</div>
+
+	<div class="form-group">
+		<label for="password">Password</label>
+		<div class="cariera-password">
+			<input type="password" class="form-control" id="password" name="password" placeholder="Your Password" />
+			<i class="lar la-eye"></i>
+		</div>
+	</div>
+
+	
+	<div class="form-group">
+		<div class="checkbox">
+			<input id="check1" type="checkbox" name="remember" value="yes">
+			<label for="check1">Keep me signed in</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<input type="submit" value="Sign in" class="btn btn-main btn-effect nomargin" /> 
+	</div>
+
+	<input type="hidden" id="login_security" name="login_security" value="433f793bb4" /><input type="hidden" name="_wp_http_referer" value="/resume/thomas-v-stpierre/" /></form>
+
+
+			<div class="bottom-links">
+				<a href="index.html%3Fp=3192.html#" class="signup-trigger"><i class="las la-user"></i>Don&#039;t have an account?</a>
+				<a href="index.html%3Fp=3192.html#" class="forget-password-trigger"><i class="las la-lock"></i>Forgot Password?</a>
+			</div>
+
+					</div>    
+	</div>
+	<!-- End of Signin wrapper -->
+
+	<!-- Start of Signup wrapper -->
+	<div class="signup-wrapper">
+		<div class="small-dialog-headline">
+			<h3 class="title">Sign Up</h3>
+		</div>
+
+		<div class="small-dialog-content">
+			
+<form id="cariera_registration" method="POST">
+	<p class="status"></p>
+
+	<div class="form-group">
+		<!-- User Roles Wrapper -->
+		<div class="user-roles-wrapper">
+								<div class="user-role candidate-role">
+						<input type="radio" name="cariera_user_role" id="candidate-input" value="candidate" class="user-role-radio" >
+						<label for="candidate-input">
+							<i class="las la-user-tie"></i>
+							<div>
+								<h6>Candidate</h6>
+								<span>Register as a Candidate</span>
+							</div>
+						</label>
+					</div>
+					
+							<div class="user-role employer-role">
+					<input type="radio" name="cariera_user_role" id="employer-input" value="employer" class="user-role-radio" checked>
+					<label for="employer-input">
+						<i class="las la-briefcase"></i>
+						<div>
+							<h6>Employer</h6>
+							<span>Register as an Employer</span>
+						</div>
+					</label>
+				</div>
+					</div>
+	</div>
+
+			<div class="form-group">
+			<label for="register_username">Username</label>
+			<input name="register_username" id="register_username" class="form-control" type="text" placeholder="Your Username" />
+		</div>
+	
+	<div class="form-group">
+		<label for="register_email">Email</label>
+		<input name="register_email" id="register_email" class="form-control" type="email" placeholder="Your Email" />
+	</div>
+
+	<div class="form-group">
+		<label for="register_password">Password</label>
+		<div class="cariera-password">
+			<input name="register_password" id="register_password" class="form-control" type="password" placeholder="Your Password" />
+			<i class="lar la-eye"></i>
+		</div>        
+	</div>
+
+	
+	
+		<div class="form-group gdpr-wrapper">
+			<div class="checkbox">
+				<input id="check-privacy" type="checkbox" name="privacy_policy">
+				<label for="check-privacy">By signing up, you agree to our <a href="index.html%3Fp=2972.html">Privacy Policy</a>.</label>
+			</div>
+		</div>
+	
+	<div class="form-group">
+		<input type="submit" class="btn btn-main btn-effect nomargin" id="cariera-user-register" value="Register"/>
+	</div>
+
+	<input type="hidden" id="register_security" name="register_security" value="aa3aa1e70d" /><input type="hidden" name="_wp_http_referer" value="/resume/thomas-v-stpierre/" /></form>
+
+
+			<div class="bottom-links">
+				<a href="index.html%3Fp=3192.html#" class="signin-trigger"><i class="las la-user"></i>Already registered?</a>
+				<a href="index.html%3Fp=3192.html#" class="forget-password-trigger"><i class="las la-lock"></i>Forgot Password?</a>
+			</div>
+
+					</div>
+	</div>
+	<!-- End of Signup wrapper -->
+
+
+	<!-- Start of Forget Password wrapper -->
+	<div class="forgetpassword-wrapper">
+		<div class="small-dialog-headline">
+			<h3 class="title">Forgot Password</h3>
+		</div>
+
+		<div class="small-dialog-content">
+			
+<form id="cariera_forget_pass" method="post">
+	<p class="status"></p>
+
+	<div class="form-group">
+		<label for="forgot_pass">Username or Email Address *</label>
+		<input id="forgot_pass" type="text" name="forgot_pass" class="form-control" placeholder="Your Username or Email Address" />
+	</div>
+
+	
+	<div class="form-group">
+		<input type="submit" name="submit" value="Reset Password" class="btn btn-main btn-effect nomargin" />
+	</div>
+
+	<input type="hidden" id="forgetpass_security" name="forgetpass_security" value="8f14b0fe90" /><input type="hidden" name="_wp_http_referer" value="/resume/thomas-v-stpierre/" /></form>
+
+			<div class="bottom-links">
+				<a href="index.html%3Fp=3192.html#" class="signin-trigger"><i class="las la-arrow-left"></i>Go back</a>
+			</div>
+		</div>
+
+	</div>
+	<!-- End of Forget Password wrapper -->
+</div>
+
+<div id="shopping-cart-modal" class="small-dialog zoom-anim-dialog mfp-hide">
+	<div class="small-dialog-headline">
+		<h3 class="title">Cart</h3>
+	</div>
+
+	<div class="small-dialog-content">
+		<div class="widget woocommerce widget_shopping_cart"><h2 class="widgettitle">Cart</h2><div class="widget_shopping_cart_content"></div></div>	</div>
+</div>
+			<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+				<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+			<div id="social-share-modal" class="small-dialog zoom-anim-dialog mfp-hide">
+			<div class="small-dialog-headline">
+				<h3 class="title">Share</h3>
+			</div>
+
+			<div class="small-dialog-content">
+				
+		<ul class="social-btns">
+							<li class="share-facebook">
+					<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcariera.co%2Fresume%2Fthomas-v-stpierre%2F&#038;title=Thomas+V.+Stpierre" target="_blank">
+						<div class="social-btn facebook">
+							<i class="social-btn-icon lab la-facebook-f"></i>						</div>
+						<h4 class="title">Facebook</h4>
+					</a>
+				</li>
+							<li class="share-twitter-x">
+					<a href="https://twitter.com/share?text=Thomas+V.+Stpierre&#038;url=https%3A%2F%2Fcariera.co%2Fresume%2Fthomas-v-stpierre%2F" target="_blank">
+						<div class="social-btn twitter-x">
+															<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+														</div>
+						<h4 class="title">X</h4>
+					</a>
+				</li>
+							<li class="share-linkedin">
+					<a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fcariera.co%2Fresume%2Fthomas-v-stpierre%2F&#038;title=Thomas+V.+Stpierre" target="_blank">
+						<div class="social-btn linkedin">
+							<i class="social-btn-icon lab la-linkedin-in"></i>						</div>
+						<h4 class="title">LinkedIn</h4>
+					</a>
+				</li>
+							<li class="share-telegram">
+					<a href="https://telegram.me/share/url?url=https%3A%2F%2Fcariera.co%2Fresume%2Fthomas-v-stpierre%2F&#038;text=Thomas+V.+Stpierre" target="_blank">
+						<div class="social-btn telegram">
+							<i class="social-btn-icon lab la-telegram"></i>						</div>
+						<h4 class="title">Telegram</h4>
+					</a>
+				</li>
+							<li class="share-tumblr">
+					<a href="https://www.tumblr.com/share?v=3&#038;u=https%3A%2F%2Fcariera.co%2Fresume%2Fthomas-v-stpierre%2F&#038;t=Thomas+V.+Stpierre" target="_blank">
+						<div class="social-btn tumblr">
+							<i class="social-btn-icon lab la-tumblr"></i>						</div>
+						<h4 class="title">Tumblr</h4>
+					</a>
+				</li>
+							<li class="share-whatsapp">
+					<a href="https://api.whatsapp.com/send?text=https%3A%2F%2Fcariera.co%2Fresume%2Fthomas-v-stpierre%2F" target="_blank">
+						<div class="social-btn whatsapp">
+							<i class="social-btn-icon lab la-whatsapp"></i>						</div>
+						<h4 class="title">Whatsapp</h4>
+					</a>
+				</li>
+							<li class="share-vk">
+					<a href="http://vk.com/share.php?url=https%3A%2F%2Fcariera.co%2Fresume%2Fthomas-v-stpierre%2F&#038;title=Thomas+V.+Stpierre" target="_blank">
+						<div class="social-btn vk">
+							<i class="social-btn-icon lab la-vk"></i>						</div>
+						<h4 class="title">VK</h4>
+					</a>
+				</li>
+							<li class="share-mail">
+					<a href="cdn-cgi/l/email-protection.html#57682422353d3234236a3f232327247264167265117265113436253e322536793438726511253224223a32726511233f383a36247a217a2423273e32252532726511717467646f6c3538332e6a033f383a36247c01797c0423273e322525327265677a7265673f232327247264167265117265113436253e322536793438726511253224223a32726511233f383a36247a217a2423273e32252532726511" target="_blank">
+						<div class="social-btn mail">
+							<i class="social-btn-icon lar la-envelope"></i>						</div>
+						<h4 class="title">Mail</h4>
+					</a>
+				</li>
+					</ul>
+
+					</div>
+		</div>
+		<link data-minify="1" rel='stylesheet' id='wc-blocks-style-css' href='wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css%3Fver=1739476630.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='cariera-single-resume-css' href='wp-content/cache/min/1/wp-content/themes/cariera/assets/dist/css/single-resume.css%3Fver=1739476911.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='cariera-resume-listings-css' href='wp-content/cache/min/1/wp-content/themes/cariera/assets/dist/css/resume-listings.css%3Fver=1739476630.css' type='text/css' media='all' />
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/checkout\/??(.*)|\/cart\/?|\/my-account\/??(.*)|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/cariera.co","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-extra">
+/* <![CDATA[ */
+var rocket_lazyload_css_data = {"threshold":"300"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-after">
+/* <![CDATA[ */
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceMappingURL=lazyload-css.min.js.map
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://cariera.co/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.5.2" id="sourcebuster-js-js" defer></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra">
+/* <![CDATA[ */
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https:\/\/cariera.co\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://cariera.co/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.5.2" id="wc-order-attribution-js" defer></script>
+<script type="text/javascript" src="wp-includes/js/imagesloaded.min.js%3Fver=5.0.0" id="imagesloaded-js" defer></script>
+<script type="text/javascript" id="cariera-main-js-extra">
+/* <![CDATA[ */
+var cariera_settings = {"ajax_url":"\/wp-admin\/admin-ajax.php","nonce":"d58a669766","theme_url":"https:\/\/cariera.co\/wp-content\/themes\/cariera","cookie_notice":"","views_statistics":"true","statistics_border":"#2346f7","statistics_background":"rgba(35, 70, 247, .1)","map_provider":"osm","gmap_api_key":"AIzaSyBUIVDcZVPgn_0NtGEsh19TitXdlEWSfFA","strings":{"mmenu_text":"Main Menu","views_chart_label":"Views"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="wp-content/themes/cariera/assets/dist/js/frontend.js%3Fver=1.8.8" id="cariera-main-js" defer></script>
+<script type="text/javascript" id="cariera-core-main-js-extra">
+/* <![CDATA[ */
+var cariera_core_settings = {"ajax_url":"\/wp-admin\/admin-ajax.php","nonce":"f57faf2741","is_rtl":"0","home_url":"https:\/\/cariera.co\/","upload_ajax":"https:\/\/cariera.co\/wp-admin\/admin-ajax.php?action=handle_uploaded_media","delete_ajax":"https:\/\/cariera.co\/wp-admin\/admin-ajax.php?action=handle_deleted_media","max_file_size":"20 MB","map_provider":"osm","strings":{"delete_account_text":"Are you sure you want to delete your account?","notification_loader":"No more notifications."}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://cariera.co/wp-content/plugins/cariera-plugin/assets/dist/js/frontend.js?ver=1.8.8" id="cariera-core-main-js" defer></script>
+<script type="text/javascript" id="cariera-maps-js-extra">
+/* <![CDATA[ */
+var cariera_maps = {"map_provider":"osm","autolocation":"1","country":"","map_autofit":"true","centerPoint":"37.9838, 23.7275","mapbox_access_token":"","map_type":"roadmap","strings":{"gelocation_error_denied":"Location permission was denied. Please allow location access to use this feature.","gelocation_error_unvailable":"Location information is unavailable.","gelocation_error_timeout":"The request to get user location timed out."}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://cariera.co/wp-content/plugins/cariera-plugin/assets/dist/js/maps.js?ver=1.8.8" id="cariera-maps-js" defer></script>
+<script type="text/javascript" src="wp-content/themes/cariera/assets/dist/js/single-resume.js%3Fver=1.8.8" id="cariera-single-resume-js" defer></script>
+<script type="text/javascript" id="cariera-user-ajax-js-extra">
+/* <![CDATA[ */
+var cariera_user_ajax = {"ajaxurl":"\/wp-admin\/admin-ajax.php","loadingmessage":"<span class=\"job-manager-message generic loading\"><i><\/i>Please wait...<\/span>","moderate":"auto","auto_login":"1","redirection":"https:\/\/cariera.co\/dashboard\/","redirection_candi":"https:\/\/cariera.co\/dashboard\/"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://cariera.co/wp-content/plugins/cariera-plugin/assets/dist/js/login-register.js?ver=1.8.8" id="cariera-user-ajax-js" defer></script>
+<script type="text/javascript" id="wc-cart-fragments-js-extra">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_363722ece1dd033d096308583b49dac7","fragment_name":"wc_fragments_363722ece1dd033d096308583b49dac7","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js%3Fver=9.5.2" id="wc-cart-fragments-js" defer="defer" data-wp-strategy="defer"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img loading="lazy" src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script><script>var rocket_lcp_data = {"ajax_url":"https:\/\/cariera.co\/wp-admin\/admin-ajax.php","nonce":"b9179bee94","url":"https:\/\/cariera.co\/resume\/thomas-v-stpierre","is_mobile":false,"elements":"img, video, picture, p, main, div, li, svg, section, header","width_threshold":1600,"height_threshold":700,"delay":500,"debug":null}</script><script data-name="wpr-lcp-beacon" src='wp-content/plugins/wp-rocket/assets/js/lcp-beacon.min.js' async></script><script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1739715297 -->
